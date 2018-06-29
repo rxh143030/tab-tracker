@@ -12,9 +12,9 @@ app.use(bodyParser.json())
 // Allow any host to access this
 app.use(cors())
 // Define what happens when you get the request
-app.get('/status', (req, res) => { 
+app.post('/register', (req, res) => { 
     res.send({ 
-        message: 'Hello World!'
+        message: 'Your user was registered! Have fun!',
     }) 
 })
 
